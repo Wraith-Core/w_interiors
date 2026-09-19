@@ -1,0 +1,43 @@
+{
+  "interior": {
+    "activated": "%s interior activated",
+    "already_active": "%s interior already active",
+    "all_active": "All interiors are already active",
+    "all_activated": "All interiors are now active",
+    "names": {
+      "valentine_bank": "Valentine bank",
+      "valentine_saloon": "Valentine saloon",
+      "valentine_jail": "Valentine jail",
+      "valentine_general_store": "Valentine general store",
+      "valentine_gun_store": "Valentine gun store",
+      "riverboat": "Riverboat",
+      "beechers": "Beecher's Hope",
+      "bronte": "Bronte mansion",
+      "braithwaite_mansion": "Braithwaite manor",
+      "character_creator": "Character creator",
+      "trelawny_caravan": "Trelawny caravan",
+      "aberdeen_pig_farm": "Aberdeen pig farm",
+      "emerald_ranch_saloon": "Emerald Ranch saloon",
+      "blackwater_general_store": "Blackwater general store",
+      "rhodes_general_store": "Rhodes general store",
+      "rhodes_gun_store": "Rhodes gun store",
+      "saint_denis_gun_store": "Saint Denis gun store",
+      "saint_denis_general_store": "Saint Denis general store",
+      "strawberry_general_store": "Strawberry general store",
+      "saint_denis_bank": "Saint Denis bank",
+      "tumbleweed_general_store": "Tumbleweed general store",
+      "tumbleweed_gun_store": "Tumbleweed gun store",
+      "rhodes_bank": "Rhodes bank",
+      "carmody_dell": "Carmody Dell",
+      "saint_denis_doctor": "Saint Denis doctor",
+      "geddes_ranch_worker_quarters": "Geddes Ranch worker quarters",
+      "shady_belle": "Shady Belle",
+      "galarie": "Saint Denis gallery",
+      "willards_rest": "Willard's Rest",
+      "wallace_station_general_store": "Wallace Station general store",
+      "armadillo_general_store": "Armadillo general store",
+      "annesburg_gun_store": "Annesburg gun store",
+      "chez_porter": "Chez Porter"
+    }
+  }
+}

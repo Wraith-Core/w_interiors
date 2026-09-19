@@ -1,0 +1,43 @@
+{
+  "interior": {
+    "activated": "تم تفعيل الديكور الداخلي: %s",
+    "already_active": "الديكور الداخلي مفعّل مسبقاً: %s",
+    "all_active": "جميع الديكورات الداخلية مفعّلة مسبقاً",
+    "all_activated": "تم تفعيل جميع الديكورات الداخلية",
+    "names": {
+      "valentine_bank": "بنك فالنتاين",
+      "valentine_saloon": "صالون فالنتاين",
+      "valentine_jail": "سجن فالنتاين",
+      "valentine_general_store": "المتجر العام في فالنتاين",
+      "valentine_gun_store": "متجر الأسلحة في فالنتاين",
+      "riverboat": "الباخرة النهرية",
+      "beechers": "مزرعة بيتشرز هوب",
+      "bronte": "قصر برونتي",
+      "braithwaite_mansion": "قصر برايثويت",
+      "character_creator": "إنشاء الشخصية",
+      "trelawny_caravan": "عربة تريلوني",
+      "aberdeen_pig_farm": "مزرعة خنازير أبردين",
+      "emerald_ranch_saloon": "صالون إميرالد رانش",
+      "blackwater_general_store": "المتجر العام في بلاك ووتر",
+      "rhodes_general_store": "المتجر العام في رودس",
+      "rhodes_gun_store": "متجر الأسلحة في رودس",
+      "saint_denis_gun_store": "متجر الأسلحة في سان دوني",
+      "saint_denis_general_store": "المتجر العام في سان دوني",
+      "strawberry_general_store": "المتجر العام في ستروبيري",
+      "saint_denis_bank": "بنك سان دوني",
+      "tumbleweed_general_store": "المتجر العام في تمبلويد",
+      "tumbleweed_gun_store": "متجر الأسلحة في تمبلويد",
+      "rhodes_bank": "بنك رودس",
+      "carmody_dell": "كارمودي ديل",
+      "saint_denis_doctor": "عيادة سان دوني",
+      "geddes_ranch_worker_quarters": "مساكن عمال مزرعة غيديس",
+      "shady_belle": "شيدي بيل",
+      "galarie": "معرض سان دوني الفني",
+      "willards_rest": "ويلاردز رست",
+      "wallace_station_general_store": "المتجر العام في محطة والاس",
+      "armadillo_general_store": "المتجر العام في أرماديلو",
+      "annesburg_gun_store": "متجر الأسلحة في أنزبورغ",
+      "chez_porter": "شي بورتر"
+    }
+  }
+}
