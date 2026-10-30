@@ -1,17 +1,35 @@
--- Interior entity sets: activated once per client session.
--- Names are dictionary keys under interior.names (locales/{ar,en}.json).
+-- Activate each missing entity set independently. Retry streamed interiors for one minute.
+local pendingInteriors = {}
 local function activateInteriorEntitySets(interior, nameKey, sets)
-	if not IsValidInterior(interior) then return end
-	local name = locale('interior.names.' .. nameKey)
-	if IsInteriorEntitySetActive(interior, sets[1]) then
-		w.print.debug(locale('interior.already_active', name))
-		return
-	end
-	for _, set in ipairs(sets) do
-		ActivateInteriorEntitySet(interior, set)
-	end
-	w.print.debug(locale('interior.activated', name))
+    pendingInteriors[#pendingInteriors + 1] = { interior = interior, sets = sets }
 end
+
+CreateThread(function()
+    Wait(0) -- the registration thread below fills the queue first
+    for attempt = 1, 60 do
+        local waiting = false
+        for _, entry in ipairs(pendingInteriors) do
+            if not entry.done then
+                if IsValidInterior(entry.interior) then
+                    local complete = true
+                    for _, set in ipairs(entry.sets) do
+                        if not IsInteriorEntitySetActive(entry.interior, set) then
+                            ActivateInteriorEntitySet(entry.interior, set)
+                            complete = false
+                        end
+                    end
+                    entry.done = complete
+                end
+                if not entry.done then waiting = true end
+            end
+        end
+        if not waiting then return end
+        Wait(1000)
+    end
+    for _, entry in ipairs(pendingInteriors) do
+        if not entry.done then print(('^3[w_interiors] Warning: interior %s was not ready after 60 seconds'):format(entry.interior)) end
+    end
+end)
 
 CreateThread(function()
 	activateInteriorEntitySets(12290, 'valentine_bank', {
