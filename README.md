@@ -1,11 +1,21 @@
 # w_interiors
 
-## 1.1.1 (2026-10-30)
+Interior entity sets and IPL/IMAP loader across the RedM map for **Wraith Framework RedM**.
 
-- تفعيل كل مجموعة داخلية ناقصة على حدة، وإعادة محاولة تحميل الأماكن غير الجاهزة لمدة محددة.
+## Key Features
 
+- Automatically enables interior entity sets and required IMAPs across towns, saloons, offices, and buildings so map interiors render cleanly without missing walls or props.
 
-Loads interior entity sets and IMAPs (Valentine, Rhodes, Saint Denis, Blackwater, Tumbleweed, Beecher's Hope, Bronte, Braithwaite, ...) on the client.
+## Installation
 
-- Depends on `w_lib`; the console messages follow the library language (`locales/ar.json`, `locales/en.json`).
-- `client/main.lua` is the active list. `client/interiorsBasic.lua` (same interiors, a few IMAP toggles differ) and `client/interiorsFull.lua` (older polling variant, 8 interiors) are alternatives that are not loaded; both use the same dictionary keys, so any of the three can be swapped into `client_script`.
+1. Place `w_interiors` in `resources/[wraith]/w_interiors`.
+2. Add `ensure w_interiors` to `server.cfg` after `w_lib`.
+
+## Documentation & Links
+
+- **Developer Docs:** https://wraith-core.github.io/docs/#/resources/interface-world
+- **txAdmin Recipe:** https://github.com/Wraith-Core/txAdminRecipe
+
+## License
+
+GPL-3.0 — see [LICENSE](LICENSE).
